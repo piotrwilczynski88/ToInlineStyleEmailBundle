@@ -13,9 +13,9 @@ namespace RobertoTru\ToInlineStyleEmailBundle\Twig;
 
 use RobertoTru\ToInlineStyleEmailBundle\Converter\ToInlineStyleEmailConverter;
 use Symfony\Component\Config\FileLocatorInterface;
-use Symfony\Component\Templating\TemplateNameParserInterface;
+use Twig\Extension\AbstractExtension;
 
-class InlineCssExtension extends \Twig_Extension implements \Twig_Extension_GlobalsInterface
+class InlineCssExtension extends AbstractExtension implements \Twig_Extension_GlobalsInterface
 {
     /**
      * @var ToInlineStyleEmailConverter
